@@ -1,0 +1,6 @@
+all: tcl
+
+tcl:
+	git clone https://github.com/tcltk/tcl.git
+	cd tcl; git checkout core-8-6-7
+	cd tcl/macosx; make -e NATIVE_TCLSH=/usr/local/bin/tclsh
