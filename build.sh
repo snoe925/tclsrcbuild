@@ -6,4 +6,4 @@ if [[ $TRAVIS_OS_NAME == 'osx' ]]; then
 else
 	echo "Build on Linux"
 	cd src; make -f Makefile.linux
-endif
+fi
